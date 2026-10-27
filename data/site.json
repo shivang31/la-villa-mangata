@@ -2,6 +2,10 @@
   "note": "Social profiles: add {\"network\": \"instagram\", \"url\": \"https://instagram.com/...\"}. Empty list = nothing shown. Supported networks: instagram, facebook, youtube, x, linkedin.",
   "socials": [
     {
+      "network": "instagram",
+      "url": "https://www.instagram.com/lavillamangata.in/"
+    },
+    {
       "network": "facebook",
       "url": "https://www.facebook.com/lavillamangata.in"
     },
