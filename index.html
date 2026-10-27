@@ -55,8 +55,8 @@
     window.addEventListener('load', function () { if (!window.__mainReady) d.classList.remove('js'); });
   })(document.documentElement);
 </script>
-<!-- SEO-JSONLD: structured data is maintained by the SEO pass. sameAs (social profiles) is intentionally omitted;
-     add it here when handles are added to data/site.json. No review/rating markup (self-served reviews are ineligible). -->
+<!-- SEO-JSONLD: structured data is maintained by the SEO pass. sameAs lists the social profiles; keep it in step with
+     data/site.json. No review/rating markup (self-served reviews are ineligible). -->
 <script type="application/ld+json" id="ld-lodging">
 {
   "@context": "https://schema.org",
@@ -80,6 +80,10 @@
       "description": "Private pool villa and farmhouse-style resort in Mangata, Rajnandgaon, near Bhilai and Durg: 4 bedrooms with attached bathrooms, a private swimming pool, a covered gazebo and a lawn for events of up to 100 guests. The whole villa is booked by one group at a time; couple and family friendly.",
       "url": "https://lavillamangata.in/",
       "telephone": "+91-91113-33368",
+      "sameAs": [
+        "https://www.facebook.com/lavillamangata.in",
+        "https://www.youtube.com/@lavillamangata"
+      ],
       "image": [
         "https://lavillamangata.in/img/gallery/la-villa-mangata-villa-exterior-day.jpg",
         "https://lavillamangata.in/img/gallery/la-villa-mangata-villa-exterior-dusk.jpg",
