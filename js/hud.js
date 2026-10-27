@@ -66,7 +66,7 @@
         sunset: d.daily.sunset.map(ist)
       };
       renderSun();
-      $('hud-stamp').textContent = 'Updated ' + hmFmt.format(new Date()) + ' IST';
+      $('hud-stamp').textContent = 'Updated ' + hmFmt.format(new Date()) + ' IST · via Open-Meteo';
     }).catch(function () {
       $('hud-cond').textContent = 'Weather unavailable';
       $('hud-stamp').textContent = 'Offline';
