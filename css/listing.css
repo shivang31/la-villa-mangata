@@ -266,3 +266,23 @@
   display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; border-radius: 999px;
   border: 1px solid var(--line-strong); background: rgba(255, 255, 255, 0.04); font-size: 0.85rem; color: var(--moon);
 }
+
+/* Footer text links: full-size touch targets (min 48px tall) */
+.foot a { display: inline-flex; align-items: center; min-height: 48px; padding-right: 6px; }
+
+/* Photo tiles: shimmer until the image has loaded (class set by main.js) */
+.js .mosaic__tile:not(.is-loaded), .js .tour-item:not(.is-loaded) {
+  background: linear-gradient(100deg, var(--night-3) 30%, rgba(236, 239, 230, 0.09) 50%, var(--night-3) 70%) 0 0 / 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+.js .mosaic__tile img, .js .tour-item img { opacity: 0; transition: opacity 0.6s var(--ease), transform 0.5s var(--ease), filter 0.5s; }
+.js .mosaic__tile.is-loaded img, .js .tour-item.is-loaded img { opacity: 1; }
+
+/* Swipe rows on phones: focused card full size, neighbours slightly smaller (class set by main.js) */
+.has-focus > .mosaic__tile, .has-focus > .sleep__card, .has-focus > .quote { transition: transform 0.45s var(--ease), opacity 0.45s var(--ease); }
+.has-focus > .mosaic__tile:not(.is-focus), .has-focus > .sleep__card:not(.is-focus), .has-focus > .quote:not(.is-focus) { transform: scale(0.93); opacity: 0.62; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .mosaic__tile:not(.is-loaded), .js .tour-item:not(.is-loaded) { animation: none; }
+  .has-focus > .mosaic__tile, .has-focus > .sleep__card, .has-focus > .quote { transition: none; }
+}

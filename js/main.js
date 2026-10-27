@@ -29,6 +29,40 @@
     el.addEventListener('error', done, { once: true });
   });
 
+  /* Photo tiles shimmer until their image arrives (tiles added later by gallery.js included) */
+  var TILE = '.mosaic__tile, .tour-item';
+  var markLoaded = function (img) { var t = img.closest(TILE); if (t) t.classList.add('is-loaded'); };
+  document.addEventListener('load', function (e) { if (e.target.tagName === 'IMG') markLoaded(e.target); }, true);
+  document.addEventListener('error', function (e) { if (e.target.tagName === 'IMG') markLoaded(e.target); }, true);
+  $$(TILE).forEach(function (t) { var img = t.querySelector('img'); if (img && img.complete) markLoaded(img); });
+
+  /* Swipe rows on phones: the card nearest the centre is in focus, the rest shrink slightly */
+  var FOCUS_KIDS = ':scope > .mosaic__tile, :scope > .sleep__card, :scope > .quote';
+  $$('.mosaic, .sleep__list, .quotes').forEach(function (row) {
+    var pending = false;
+    function update() {
+      pending = false;
+      var scrollable = row.scrollWidth > row.clientWidth + 4;
+      row.classList.toggle('has-focus', scrollable);
+      if (!scrollable) return;
+      var box = row.getBoundingClientRect();
+      var centre = box.left + box.width / 2;
+      var kids = $$(FOCUS_KIDS, row);
+      var best = null, bestDist = Infinity;
+      kids.forEach(function (c) {
+        var r = c.getBoundingClientRect();
+        var d = Math.abs(r.left + r.width / 2 - centre);
+        if (d < bestDist) { bestDist = d; best = c; }
+      });
+      kids.forEach(function (c) { c.classList.toggle('is-focus', c === best); });
+    }
+    var schedule = function () { if (!pending) { pending = true; requestAnimationFrame(update); } };
+    row.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    if ('MutationObserver' in window) new MutationObserver(schedule).observe(row, { childList: true });
+    update();
+  });
+
   /* Dock: highlight the section in view; light haptic on tap */
   var dockItems = $$('.dock__item');
   dockItems.forEach(function (item) { item.addEventListener('click', function () { haptic(8); }); });
