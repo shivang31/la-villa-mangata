@@ -1,4 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lavillamangata.in/</loc><lastmod>2026-10-27</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://lavillamangata.in/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/exterior.jpg</image:loc>
+      <image:title>La Villa Mangata, a private pool villa in Mangata, Rajnandgaon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-villa-exterior-day.jpg</image:loc>
+      <image:title>La Villa Mangata, a white two-storey villa with a dark sweeping roof and a large green lawn</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-villa-exterior-dusk.jpg</image:loc>
+      <image:title>The villa at dusk with its lights on</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-entrance-pathway.jpg</image:loc>
+      <image:title>Paved pathway lined with young palms leading to the villa</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-entrance-gate-sign.jpg</image:loc>
+      <image:title>Entrance gate with the La Villa Mangata name board</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-villa-at-night.jpg</image:loc>
+      <image:title>The villa lit up at night with purple and warm lights over the lawn</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-pool-floating-breakfast.jpg</image:loc>
+      <image:title>Private pool with a floating breakfast tray</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-pool-breakfast-reflection.jpg</image:loc>
+      <image:title>Floating breakfast on the pool with trees reflected in the water</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-floating-breakfast-closeup.jpg</image:loc>
+      <image:title>Close-up of the heart-shaped floating breakfast tray with fruit and juice</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-pool-reflection.jpg</image:loc>
+      <image:title>Still pool water reflecting the trees and sky</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-pool-night-lights.jpg</image:loc>
+      <image:title>Pool at night under a canopy of string lights</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-pool-night-blue.jpg</image:loc>
+      <image:title>Pool glowing blue at night with palms and warm lights</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-pool-night-wide.jpg</image:loc>
+      <image:title>Wide view of the lit pool and deck at night</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-pool-night-deck.jpg</image:loc>
+      <image:title>Pool deck at night with ceiling lights</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-bedroom-king-bed.jpg</image:loc>
+      <image:title>Bedroom with a king bed and a blue padded headboard</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-bedroom-blue-linen.jpg</image:loc>
+      <image:title>Bedroom with a king bed, wood floors and a ceiling fan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-bedroom-wood-panel.jpg</image:loc>
+      <image:title>Bedroom with a wood-panelled wall and a king bed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-lounge-sofas.jpg</image:loc>
+      <image:title>Lounge with blue sofas by a large window</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-bathroom-washbasin.jpg</image:loc>
+      <image:title>Attached bathroom with a washbasin</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-bathroom-western-toilet.jpg</image:loc>
+      <image:title>Attached bathroom with a Western toilet</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-gazebo-lawn-day.jpg</image:loc>
+      <image:title>Covered gazebo at the edge of the lawn under a blue sky</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-gazebo-dining-night.jpg</image:loc>
+      <image:title>Gazebo set with a long dining table under string lights at night</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lavillamangata.in/img/gallery/la-villa-mangata-celebration-flower-arches.jpg</image:loc>
+      <image:title>Flower arches and a red carpet set up on the lawn for a celebration</image:title>
+    </image:image>
+  </url>
 </urlset>

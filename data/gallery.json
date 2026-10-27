@@ -1,0 +1,222 @@
+[
+ {
+  "id": 1,
+  "name": "la-villa-mangata-villa-exterior-day",
+  "cat": "Exterior",
+  "alt": "La Villa Mangata, a white two-storey villa with a dark sweeping roof and a large green lawn",
+  "w": 1600,
+  "h": 1302,
+  "sw": 640,
+  "sh": 521
+ },
+ {
+  "id": 2,
+  "name": "la-villa-mangata-villa-exterior-dusk",
+  "cat": "Exterior",
+  "alt": "The villa at dusk with its lights on",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 3,
+  "name": "la-villa-mangata-entrance-pathway",
+  "cat": "Exterior",
+  "alt": "Paved pathway lined with young palms leading to the villa",
+  "w": 1600,
+  "h": 1200,
+  "sw": 640,
+  "sh": 480
+ },
+ {
+  "id": 4,
+  "name": "la-villa-mangata-entrance-gate-sign",
+  "cat": "Exterior",
+  "alt": "Entrance gate with the La Villa Mangata name board",
+  "w": 1600,
+  "h": 1056,
+  "sw": 640,
+  "sh": 422
+ },
+ {
+  "id": 5,
+  "name": "la-villa-mangata-villa-at-night",
+  "cat": "Night",
+  "alt": "The villa lit up at night with purple and warm lights over the lawn",
+  "w": 1600,
+  "h": 739,
+  "sw": 640,
+  "sh": 296
+ },
+ {
+  "id": 6,
+  "name": "la-villa-mangata-pool-floating-breakfast",
+  "cat": "Pool",
+  "alt": "Private pool with a floating breakfast tray",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 7,
+  "name": "la-villa-mangata-pool-breakfast-reflection",
+  "cat": "Pool",
+  "alt": "Floating breakfast on the pool with trees reflected in the water",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 8,
+  "name": "la-villa-mangata-floating-breakfast-closeup",
+  "cat": "Pool",
+  "alt": "Close-up of the heart-shaped floating breakfast tray with fruit and juice",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 9,
+  "name": "la-villa-mangata-pool-reflection",
+  "cat": "Pool",
+  "alt": "Still pool water reflecting the trees and sky",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 10,
+  "name": "la-villa-mangata-pool-night-lights",
+  "cat": "Pool at night",
+  "alt": "Pool at night under a canopy of string lights",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 11,
+  "name": "la-villa-mangata-pool-night-blue",
+  "cat": "Pool at night",
+  "alt": "Pool glowing blue at night with palms and warm lights",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 12,
+  "name": "la-villa-mangata-pool-night-wide",
+  "cat": "Pool at night",
+  "alt": "Wide view of the lit pool and deck at night",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 13,
+  "name": "la-villa-mangata-pool-night-deck",
+  "cat": "Pool at night",
+  "alt": "Pool deck at night with ceiling lights",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 14,
+  "name": "la-villa-mangata-bedroom-king-bed",
+  "cat": "Bedrooms",
+  "alt": "Bedroom with a king bed and a blue padded headboard",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 15,
+  "name": "la-villa-mangata-bedroom-blue-linen",
+  "cat": "Bedrooms",
+  "alt": "Bedroom with a king bed, wood floors and a ceiling fan",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 16,
+  "name": "la-villa-mangata-bedroom-wood-panel",
+  "cat": "Bedrooms",
+  "alt": "Bedroom with a wood-panelled wall and a king bed",
+  "w": 740,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 17,
+  "name": "la-villa-mangata-lounge-sofas",
+  "cat": "Bedrooms",
+  "alt": "Lounge with blue sofas by a large window",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 18,
+  "name": "la-villa-mangata-bathroom-washbasin",
+  "cat": "Bathrooms",
+  "alt": "Attached bathroom with a washbasin",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 19,
+  "name": "la-villa-mangata-bathroom-western-toilet",
+  "cat": "Bathrooms",
+  "alt": "Attached bathroom with a Western toilet",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 20,
+  "name": "la-villa-mangata-gazebo-lawn-day",
+  "cat": "Gazebo & lawn",
+  "alt": "Covered gazebo at the edge of the lawn under a blue sky",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 21,
+  "name": "la-villa-mangata-gazebo-dining-night",
+  "cat": "Gazebo & lawn",
+  "alt": "Gazebo set with a long dining table under string lights at night",
+  "w": 739,
+  "h": 1600,
+  "sw": 296,
+  "sh": 640
+ },
+ {
+  "id": 22,
+  "name": "la-villa-mangata-celebration-flower-arches",
+  "cat": "Celebrations",
+  "alt": "Flower arches and a red carpet set up on the lawn for a celebration",
+  "w": 1200,
+  "h": 1600,
+  "sw": 480,
+  "sh": 640
+ }
+]

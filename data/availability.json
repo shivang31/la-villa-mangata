@@ -1,0 +1,5 @@
+{
+  "updated": null,
+  "note": "Set 'updated' to today's date (YYYY-MM-DD) and list booked nights as 'YYYY-MM-DD' to grey them out in the booking calendar.",
+  "booked": []
+}
