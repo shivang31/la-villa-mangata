@@ -1,12 +1,9 @@
-/* App-style booking: bottom sheet with a range calendar, live price breakdown, haptics,
-   and the "install as app" prompt. Booked dates come from data/availability.json once the owner fills it. */
+/* App-style booking: bottom sheet with a range calendar, haptics and a WhatsApp quote request,
+   plus the "install as app" prompt. Booked dates come from data/availability.json once the owner fills it. */
 (function () {
   'use strict';
 
   var WA = 'https://wa.me/919111333368';
-  var RATE = 15000;
-  var EXTRA = 1000;            // per extra guest, per night, above 12
-  var BASE_GUESTS = 12;
   var MAX_NIGHTS = 14;
   var $ = function (id) { return document.getElementById(id); };
   var sheet = $('sheet');
@@ -14,7 +11,6 @@
   var panel = sheet.querySelector('.sheet__panel');
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var haptic = function (ms) { if (navigator.vibrate) { try { navigator.vibrate(ms || 8); } catch (e) {} } };
-  var inr = function (n) { return '₹' + Math.round(n).toLocaleString('en-IN'); };
   var pad = function (n) { return (n < 10 ? '0' : '') + n; };
   var key = function (d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); };
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -42,7 +38,6 @@
     requestAnimationFrame(function () { sheet.classList.add('is-open'); panel.focus({ preventScroll: true }); });
     haptic(10);
     renderCal();
-    renderPrice(true);
   }
   function close() {
     sheet.classList.remove('is-open');
@@ -141,7 +136,6 @@
       haptic([8, 40, 12]);
     }
     renderCal();
-    renderPrice();
   });
   $('cal-prev').addEventListener('click', function () { view.setMonth(view.getMonth() - 1); haptic(6); renderCal(); });
   $('cal-next').addEventListener('click', function () { view.setMonth(view.getMonth() + 1); haptic(6); renderCal(); });
@@ -162,39 +156,10 @@
     $('sg-down').disabled = guests <= 1;
     $('sg-up').disabled = guests >= 30;
   }
-  $('sg-down').addEventListener('click', function () { if (guests > 1) { guests--; haptic(6); renderGuests(); renderPrice(); } });
-  $('sg-up').addEventListener('click', function () { if (guests < 30) { guests++; haptic(6); renderGuests(); renderPrice(); } });
+  $('sg-down').addEventListener('click', function () { if (guests > 1) { guests--; haptic(6); renderGuests(); } });
+  $('sg-up').addEventListener('click', function () { if (guests < 30) { guests++; haptic(6); renderGuests(); } });
   renderGuests();
   sheet.querySelectorAll('.chips input').forEach(function (r) { r.addEventListener('change', function () { haptic(6); }); });
-
-  /* Price with a counting animation */
-  var shown = 0, raf = null;
-  function animateTo(el, target) {
-    if (raf) cancelAnimationFrame(raf);
-    if (reduceMotion) { el.textContent = inr(target); shown = target; return; }
-    var from = shown, t0 = performance.now(), dur = 520;
-    (function step(t) {
-      var p = Math.min(1, (t - t0) / dur);
-      var e = 1 - Math.pow(1 - p, 3);
-      shown = from + (target - from) * e;
-      el.textContent = inr(shown);
-      if (p < 1) raf = requestAnimationFrame(step);
-    })(t0);
-  }
-  function renderPrice(instant) {
-    var n = nights();
-    var extraGuests = Math.max(0, guests - BASE_GUESTS);
-    var villa = RATE * n;
-    var extra = EXTRA * extraGuests * n;
-    var total = villa + extra;
-    $('bd-nights-label').textContent = 'Villa, ' + n + (n === 1 ? ' night' : ' nights') + ' × ' + inr(RATE);
-    $('bd-villa').textContent = inr(villa);
-    $('bd-extra-row').hidden = extraGuests === 0;
-    $('bd-extra-label').textContent = extraGuests + ' extra ' + (extraGuests === 1 ? 'guest' : 'guests') + ' × ' + inr(EXTRA) + ' × ' + n;
-    $('bd-extra').textContent = inr(extra);
-    if (instant) { shown = total; $('bd-total').textContent = inr(total); } else animateTo($('bd-total'), total);
-    $('bd-pp').textContent = n ? inr(total / guests) + ' per person for the stay' : 'Pick dates to see the price';
-  }
 
   /* Send */
   $('sheet-send').addEventListener('click', function () {
@@ -205,13 +170,11 @@
     err.textContent = '';
     var occasion = (sheet.querySelector('.chips input:checked') || {}).value || 'Weekend stay';
     var n = nights();
-    var total = RATE * n + EXTRA * Math.max(0, guests - BASE_GUESTS) * n;
-    var msg = 'Hi, I would like to book La Villa Mangata.\n' +
+    var msg = 'Hi, I would like a quote for La Villa Mangata.\n' +
       'Check-in: ' + fmt(checkin) + ' ' + checkin.getFullYear() + '\n' +
       'Check-out: ' + fmt(checkout) + ' ' + checkout.getFullYear() + ' (' + n + (n === 1 ? ' night' : ' nights') + ')\n' +
       'Guests: ' + guests + '\n' +
       'Occasion: ' + occasion + '\n' +
-      'Estimated total: ' + inr(total) + '\n' +
       'Name: ' + name;
     haptic([10, 30, 10]);
     window.open(WA + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
@@ -235,5 +198,4 @@
   if (isIOS && !standalone) $('install-ios').hidden = false;
 
   renderCal();
-  renderPrice(true);
 })();

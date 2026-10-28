@@ -1,4 +1,4 @@
-/* Listing layout: Airbnb-style sections, sticky price card, amenities modal,
+/* Listing layout: Airbnb-style sections, sticky booking card, amenities modal,
    platform chooser, FAQ and footer socials. Loaded after styles.css. */
 
 /* ---------- Hero additions ---------- */
@@ -147,10 +147,10 @@
   .quotes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; overflow: visible; margin-inline: 0; padding: 0; }
 }
 
-/* ---------- Sticky price card (desktop) ---------- */
+/* ---------- Sticky booking card (desktop) ---------- */
 .book-card { border-radius: 24px; padding: 24px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 30px 60px -24px rgba(0, 0, 0, 0.7); }
-.book-card__price { color: var(--moon-dim); font-size: 1.05rem; }
-.book-card__price .mono { font-size: 1.9rem; color: var(--moon); font-weight: 500; margin-right: 4px; }
+.book-card__lead { color: var(--moon-dim); font-size: 1.05rem; }
+.book-card__lead .mono { display: block; font-size: 1.9rem; color: var(--moon); font-weight: 500; }
 .book-card__rating { margin-top: 4px; font-size: 0.92rem; color: var(--moon-dim); }
 .book-card__rating .stars { letter-spacing: 0; font-size: 0.95rem; }
 .book-card__note { margin: 16px 0 18px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; color: var(--moon-dim); font-size: 0.92rem; }
