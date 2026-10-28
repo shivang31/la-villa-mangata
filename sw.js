@@ -1,6 +1,6 @@
 /* Offline support: pages are fetched fresh when online (falling back to the cached copy),
    static assets are served from cache and refreshed in the background. */
-const VERSION = 'lvm-v10';
+const VERSION = 'lvm-v11';
 const SHELL = [
   './', 'index.html', 'css/styles.css', 'css/listing.css', 'css/gallery.css',
   'js/main.js', 'js/water.js', 'js/hud.js', 'js/booking.js', 'js/gallery.js', 'js/listing.js', 'js/motion.js',
