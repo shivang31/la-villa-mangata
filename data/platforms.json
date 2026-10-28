@@ -2,7 +2,7 @@
   "note": "Booking platforms shown in 'Book on your favourite app'. Set status to 'live' and add the listing url to switch a platform on. Order = display order.",
   "platforms": [
     { "id": "whatsapp",    "name": "WhatsApp",    "tag": "Direct · best price", "color": "#25d366", "status": "live", "url": "https://wa.me/919111333368?text=Hi%2C%20I%27d%20like%20to%20book%20La%20Villa%20Mangata." },
-    { "id": "airbnb",      "name": "Airbnb",      "tag": "Coming soon", "color": "#ff5a5f", "status": "soon", "url": "" },
+    { "id": "airbnb",      "name": "Airbnb",      "tag": "Pay online", "color": "#ff5a5f", "status": "live", "url": "https://www.airbnb.co.in/rooms/1806348192548215037" },
     { "id": "booking",     "name": "Booking.com", "tag": "Coming soon", "color": "#2f6fdc", "status": "soon", "url": "" },
     { "id": "makemytrip",  "name": "MakeMyTrip",  "tag": "Coming soon", "color": "#e7302a", "status": "soon", "url": "" },
     { "id": "goibibo",     "name": "Goibibo",     "tag": "Coming soon", "color": "#f26722", "status": "soon", "url": "" },
